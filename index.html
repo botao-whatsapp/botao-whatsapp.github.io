@@ -6,7 +6,7 @@
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
       <script src="https://kit.fontawesome.com/42b36dc6ee.js" crossorigin="anonymous"></script>
       <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
-      <title>btn</title>
+      <title>botao-whatsapp.github.io - Insira o botão do WhatsApp em seu site</title>
       <style>
          *{
             font-family: 'Nunito', sans-serif;
@@ -82,11 +82,10 @@
       </div>
       <div class="border-bottom" style="background-image: url(img/form.png);
       background-position: center top;
-      background-attachment: fixed;
       background-size: 100% auto; min-height: 250px; background-repeat: no-repeat;">
       <div class="container py-5">
          <div class="row">
-            <h2 class="display-1">Crie agora mesmo</h2>
+            <h4 class="display-3"><strong>Crie</strong> agora mesmo</h4>
          </div>
       </div>
 </div>
@@ -111,8 +110,8 @@
                            </div>
                         </div>
                         <div class="col-md-4 mb-3">
-                           <label>Mensagem de saudação</label>
-                           <input type="text" class="form-control" name="salutation" value="Olá! Em que posso ajudar?" required>
+                           <label>Horário de funcionamento</label>
+                           <input type="text" class="form-control" name="openinghours" value="segunda a sexta-feira, das 10h às 18h" required>
                            <div class="valid-feedback">
                               Looks good!
                            </div>
@@ -204,7 +203,7 @@
       <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-      <script src='widget.js' id='widget' data-json='{"text":"Está com dúvidas?","salutation":"Olá! Em que posso ajudar?","name":["Jorge Miguel"],"area":["Desenvolvimento"],"phone":["5511981087234"]}'></script>
+      <script src='https://botao-whatsapp.github.io/widget.js' id='widget' data-json='{"text":"Fale conosco agora mesmo","salutation":"Olá! Em que posso ajudar?","openinghours":"segunda a sexta-feira, das 10h às 18h","name":"Jorge Miguel","area":"Desenvolvimento","phone":"5511981087234"}'></script>
       <script>
          $(document).ready(function () {
          var counter = 1;
@@ -251,7 +250,7 @@
          $(function() {
          $('form').submit(function() {
          $("#widget").attr("data-json", JSON.stringify($('form').serializeObject()));
-         $("textarea").val("<script src='widget.js' id='widget' data-json=\'"+ JSON.stringify($('form').serializeObject()) + "'\><\/script>");
+         $("textarea").val("<script src='https://botao-whatsapp.github.io/widget.js' id='widget' data-json=\'"+ JSON.stringify($('form').serializeObject()) + "'\><\/script>");
          return false;
          });
          });
