@@ -8,7 +8,7 @@ jQuery(document).ready(function($) {
     url = parent.document.URL;
     var iframe = document.createElement('iframe');
     iframe.setAttribute('id', 'customer-chatbox');
-    iframe.setAttribute("src", "iframe.html?json="+link.getAttribute('data-json'));
+    iframe.setAttribute("src", "https://botao-whatsapp.github.io/iframe.html?json="+link.getAttribute('data-json'));
     iframe.style.width = "340px";
     iframe.style.height = "423px";
     iframe.style.position = 'fixed';
